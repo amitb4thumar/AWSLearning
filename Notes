@@ -1,0 +1,18 @@
+11-10-19 Fri -- Introduction
+cloud computing -> sharing of computer processing resources and data to computers and other devices on demand.
+cloud computing models:
+  -> IaaS - has buiding blocks for cloud it like vpc, ec2, ebs
+  -> PaaS - amazon manages the underlying infra lile eds, emr, elastic search
+  -> SaaS - complete product managed by service provider like web based email, office365 or salesforce.com
+cloud computing deployment models:
+  -> Cloud
+  -> Hybrid
+  -> OnPremise
+serverless computing -> building apps without thinking of servers at all. FaaS (function) or abstract service like s3, lambda, dynamoDB, sns
+aws service categories: too many options like nw, security, msging, analytics
+
+global infrastructure has 16 regions, 42 availibility zones and 50+ edge locations. Not all services are available at all regions. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+14-10-19 Mon -- Storage
