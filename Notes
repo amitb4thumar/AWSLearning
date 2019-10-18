@@ -13,6 +13,19 @@ aws service categories: too many options like nw, security, msging, analytics
 
 global infrastructure has 16 regions, 42 availibility zones and 50+ edge locations. Not all services are available at all regions. 
 
----------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
 
 14-10-19 Mon -- Storage
+1. S3 -> basic storage of buckde. endpoint is required to access s3 in a VPC.
+2. glacier -> long term data storage. takes time to be available on demand. least cost. glacier can be converted in s3 on demand which can be then accessed afterwards.
+3. EBS -> elastic Block storage to attach to a single server
+4. Storage Gateway -> High speed conenctivity via nw for on premoise server
+5. EFS -> elastic file storage like NAS storage for multiple server access. efs mount target is required to access efs from outside of VPC - virtual private cloud 
+6. Import export snowball -> upload data on aws physical device and then they will use it to put it online in aws
+
+e.g. disaster recovery with aws will have snowball service first to be send to aws for first connection and then aws storage gateway for increamental storage update.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+15-10-19 Tues -- DB
+
