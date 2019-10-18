@@ -1,4 +1,5 @@
 11-10-19 Fri -- Introduction
+
 cloud computing -> sharing of computer processing resources and data to computers and other devices on demand.
 cloud computing models:
   -> IaaS - has buiding blocks for cloud it like vpc, ec2, ebs
@@ -16,6 +17,7 @@ global infrastructure has 16 regions, 42 availibility zones and 50+ edge locatio
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 14-10-19 Mon -- Storage
+
 1. S3 -> basic storage of buckde. endpoint is required to access s3 in a VPC.
 2. glacier -> long term data storage. takes time to be available on demand. least cost. glacier can be converted in s3 on demand which can be then accessed afterwards.
 3. EBS -> elastic Block storage to attach to a single server
