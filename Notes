@@ -31,3 +31,13 @@ e.g. disaster recovery with aws will have snowball service first to be send to a
 
 15-10-19 Tues -- DB
 
+RDS - mysql  managed by amazon
+Aurora - enterprice class paid db (ms sql, oracle, postgres)
+dynamo db - just create table, no need to manage db related things
+elasti cache - cache memory for frequently used data
+redshift - postgres db for data warehouse
+aws db migration service - from on prem or cloud db to aws db
+
+e.g. db migration servide used to connect onsite db and then put it in oracle rds db instance. elasti cache node is used to cache the data and will be used to put up front so all request go through it.
+
+practial labs include creating db in aws console and accessing it via any db client e.g. oracle sql developer or cmd line utility.
