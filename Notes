@@ -41,3 +41,36 @@ aws db migration service - from on prem or cloud db to aws db
 e.g. db migration servide used to connect onsite db and then put it in oracle rds db instance. elasti cache node is used to cache the data and will be used to put up front so all request go through it.
 
 practial labs include creating db in aws console and accessing it via any db client e.g. oracle sql developer or cmd line utility.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+16-10-19 Wed -- Compute
+
+Compute services and nw and content delivery services. Running code in server. IaaS
+
+1) Compute
+EC2 - Elastic compute cloud, any server like linux or windows with e.g. web service
+ELB - Elastic load balancing, distribute requests or load
+ECS - Elastic container service, launching services with docker container with all infra ready for use
+AutoScaling - autoscaling group by adding services or servers based on demand
+Elastic Beanstalk - supply code and it'll do what needs to be done for it without us getting involved. Uses e.g. EC2 in backend for deployement.
+Lambda - serverless environment to run any code in it based on milisecond of running
+
+vertical scaling is getting big (high end) server for the same app and horizontal scaling is adding more servers of same type. Load balancer will distribute the request to servers based on load. if the request get more than the environment is able to handle, the addition or removal of servers will be done on demand. 
+
+2) Nw and Content delivery
+VPC - private private cloud, space or network within amazon nw
+Direct Connect - high speed access to aws cloud
+CloudFront - CDN in aws, high speed low latency. It also has cache which will server most used data without putting the requests in the actual servers or ELB.
+ELB - distribute the load
+Route 53 - route requests in domain
+
+nw hirarchy - AWS cloud -> Region -> availablity zone -> VPC -> ELB and EC2, etc
+
+multi availibility zone distrubutes the load based on regions. if one goes down, requests can be routed to next available zone infra. route 53 will be used to route traffic through the dns service. aws direct connect will connect inhouse db to this infra in aws.
+
+use LAMP with wordpress app. AMI is amazon machine image (basically a server with the os and other infra basically set up). select assign public ip for access outside the aws. select wordpress instance. lauch the instance without the key-pair to connect to it directly. copy the ip in broswer and we are ready to go!
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+17-10-19 Thurs -- Compute
+
